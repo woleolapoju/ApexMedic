@@ -1,0 +1,1721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2CAC540-87F4-4AD4-B928-16C3D86A7708}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ApexMedic.My.MyApplication</StartupObject>
+    <RootNamespace>ApexMedic</RootNamespace>
+    <AssemblyName>ApexMedic</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Hosp.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>10B561B58F0784AA75E02CECB834A2473F6F02BD</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ApexMedic_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Applications\ApexMedic\Deployment\ClickOnce\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Applications\ApexMedic\Deployment\</InstallUrl>
+    <UpdateUrl>\\Zankliserver\Applications\Deployment\ApexMedic\</UpdateUrl>
+    <SupportUrl>http://www.megahitsystems.com</SupportUrl>
+    <ProductName>ApexMedic 2010</ProductName>
+    <PublisherName>MegaHit Systems</PublisherName>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ApexMedic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ApexMedic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ATSMS, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ConfigDir\ATSMS.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="msmdvbanet, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ConfigDir\msmdvbanet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigDir\Receipt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmAdvanceModify.Designer.vb">
+      <DependentUpon>FrmAdvanceModify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmAdvanceModify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmDiscount.Designer.vb">
+      <DependentUpon>FrmDiscount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmDiscount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmRefunds.Designer.vb">
+      <DependentUpon>FrmRefunds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmRefunds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmHelpDesk.Designer.vb">
+      <DependentUpon>FrmHelpDesk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmHelpDesk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmRoaster.Designer.vb">
+      <DependentUpon>FrmRoaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmRoaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmUnregisteredPatients.Designer.vb">
+      <DependentUpon>FrmUnregisteredPatients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmUnregisteredPatients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmLabCulture.Designer.vb">
+      <DependentUpon>FrmLabCulture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmLabCulture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmLabStool.Designer.vb">
+      <DependentUpon>FrmLabStool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmLabStool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmLabUrinalysis.Designer.vb">
+      <DependentUpon>FrmLabUrinalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmLabUrinalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\frmMailNotification.designer.vb">
+      <DependentUpon>frmMailNotification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing\frmMailNotification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationAntenatal.Designer.vb">
+      <DependentUpon>FrmConsultationAntenatal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationAntenatal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmAntenatalBookingInfo.Designer.vb">
+      <DependentUpon>FrmAntenatalBookingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmAntenatalBookingInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationHistory.Designer.vb">
+      <DependentUpon>FrmConsultationHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationMini.Designer.vb">
+      <DependentUpon>FrmConsultationMini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationMini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationPrescription.Designer.vb">
+      <DependentUpon>FrmConsultationPrescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationPrescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationSummary.Designer.vb">
+      <DependentUpon>FrmConsultationSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultationSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmNursingStation.Designer.vb">
+      <DependentUpon>FrmNursingStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmNursingStation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmRequestForm.Designer.vb">
+      <DependentUpon>FrmRequestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmRequestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmLPO.Designer.vb">
+      <DependentUpon>FrmLPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmLPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmTransfer.Designer.vb">
+      <DependentUpon>FrmTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Admissions.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Admissions.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AntenatalBooking.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AntenatalBooking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BillsList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillsList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationAntenatal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationAntenatal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationMini.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationMini.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationRegister.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationRegister.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Bills.vb">
+      <DependentUpon>Bills.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\DrugList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugLPO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugLPO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FinancialAnalysis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinancialAnalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HospitalServices.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalServices.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabRequestList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabRequestList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResult.vb">
+      <DependentUpon>LabResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\LabResultCulture.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultCulture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResultRequest.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultRequest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResultStool.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultStool.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResultUrinalysis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultUrinalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ServiceRendered.vb">
+      <DependentUpon>ServiceRendered.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reports\WardTransfer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WardTransfer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmDutyPost.Designer.vb">
+      <DependentUpon>FrmDutyPost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmDutyPost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmCompany.Designer.vb">
+      <DependentUpon>FrmCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatientHistory.Designer.vb">
+      <DependentUpon>FrmPatientHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatientHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatientRegister.Designer.vb">
+      <DependentUpon>FrmPatientRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatientRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ApexMenu.designer.vb">
+      <DependentUpon>ApexMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\ApexMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmAdhocFinancialState.Designer.vb">
+      <DependentUpon>FrmAdhocFinancialState.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmAdhocFinancialState.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmClearPayment.Designer.vb">
+      <DependentUpon>FrmClearPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmClearPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmPayment.Designer.vb">
+      <DependentUpon>FrmPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmAppointments.Designer.vb">
+      <DependentUpon>FrmAppointments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmAppointments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmCaptureImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmBakRes.designer.vb">
+      <DependentUpon>FrmBakRes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmBakRes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmBills.Designer.vb">
+      <DependentUpon>FrmBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmBills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmChangePwd.designer.vb">
+      <DependentUpon>FrmChangePwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmChangePwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmCoyInfo.designer.vb">
+      <DependentUpon>FrmCoyInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmCoyInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmImageDisplay.Designer.vb">
+      <DependentUpon>FrmImageDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmImageDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmRptBuilder.designer.vb">
+      <DependentUpon>FrmRptBuilder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmRptBuilder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmRptDisplay.designer.vb">
+      <DependentUpon>FrmRptDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmRptDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmSettings.Designer.vb">
+      <DependentUpon>FrmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmStaffRegister.designer.vb">
+      <DependentUpon>FrmStaffRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmStaffRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmText.Designer.vb">
+      <DependentUpon>FrmText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ListViewSorter.vb" />
+    <Compile Include="InPatient\FrmAdmission.Designer.vb">
+      <DependentUpon>FrmAdmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatient\FrmAdmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPatient\FrmDischarge.Designer.vb">
+      <DependentUpon>FrmDischarge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatient\FrmDischarge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmHospitalWard.Designer.vb">
+      <DependentUpon>FrmHospitalWard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmHospitalWard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPatient\FrmWardTransfer.Designer.vb">
+      <DependentUpon>FrmWardTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatient\FrmWardTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\FrmSmsSetup.Designer.vb">
+      <DependentUpon>FrmSmsSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing\FrmSmsSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\FrmSMS.designer.vb">
+      <DependentUpon>FrmSMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing\FrmSMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\StringUtils.vb" />
+    <Compile Include="Medicals\FrmDeath.Designer.vb">
+      <DependentUpon>FrmDeath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmDeath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmDelivery.Designer.vb">
+      <DependentUpon>FrmDelivery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmDelivery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmICDCode.Designer.vb">
+      <DependentUpon>FrmICDCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmICDCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmMortuary.Designer.vb">
+      <DependentUpon>FrmMortuary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmMortuary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmMultiSelection.Designer.vb">
+      <DependentUpon>FrmMultiSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmMultiSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmReferral.Designer.vb">
+      <DependentUpon>FrmReferral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmReferral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmReferralUnit.Designer.vb">
+      <DependentUpon>FrmReferralUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmReferralUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InPatient\FrmSurgery.Designer.vb">
+      <DependentUpon>FrmSurgery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InPatient\FrmSurgery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultation.Designer.vb">
+      <DependentUpon>FrmConsultation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmConsultation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicals\FrmMedExam.Designer.vb">
+      <DependentUpon>FrmMedExam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medicals\FrmMedExam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\FrmInBox.Designer.vb">
+      <DependentUpon>FrmInBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing\FrmInBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmMedExamTypes.Designer.vb">
+      <DependentUpon>FrmMedExamTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmMedExamTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmVitalSignType.Designer.vb">
+      <DependentUpon>FrmVitalSignType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmVitalSignType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmLabTest.Designer.vb">
+      <DependentUpon>FrmLabTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmLabTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigation\FrmLabTestResult.Designer.vb">
+      <DependentUpon>FrmLabTestResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmLabTestResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmList.designer.vb">
+      <DependentUpon>FrmList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\FrmComposeMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing\FrmComposeMail.Designer.vb">
+      <DependentUpon>FrmComposeMail.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmMain.designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatentList.Designer.vb">
+      <DependentUpon>FrmPatentList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrontDesk\FrmPatentList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financials\FrmBulkPayment.Designer.vb">
+      <DependentUpon>FrmBulkPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Financials\FrmBulkPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmSplash.designer.vb">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmStart.designer.vb">
+      <DependentUpon>FrmStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmSvrInfor.designer.vb">
+      <DependentUpon>FrmSvrInfor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmSvrInfor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmSysPeriod.designer.vb">
+      <DependentUpon>FrmSysPeriod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmSysPeriod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\FrmSysUser.designer.vb">
+      <DependentUpon>FrmSysUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\FrmSysUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ModNum2Words.vb" />
+    <Compile Include="Investigation\FrmXray.Designer.vb">
+      <DependentUpon>FrmXray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmXray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="General\ApexModule.vb" />
+    <Compile Include="Investigation\FrmScan.Designer.vb">
+      <DependentUpon>FrmScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Investigation\FrmScan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmBaseUnit.Designer.vb">
+      <DependentUpon>FrmBaseUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmBaseUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugCategory.Designer.vb">
+      <DependentUpon>FrmDrugCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmIssue.Designer.vb">
+      <DependentUpon>FrmIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmReceipt.Designer.vb">
+      <DependentUpon>FrmReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmAssignStore.designer.vb">
+      <DependentUpon>FrmAssignStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmAssignStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmRequisition.Designer.vb">
+      <DependentUpon>FrmRequisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmRequisition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmStockAdjustment.Designer.vb">
+      <DependentUpon>FrmStockAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmStockAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmStores.Designer.vb">
+      <DependentUpon>FrmStores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmStores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugs.designer.vb">
+      <DependentUpon>FrmDrugs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmBatches.designer.vb">
+      <DependentUpon>FrmBatches.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmBatches.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmUnitConverter.Designer.vb">
+      <DependentUpon>FrmUnitConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmUnitConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugSupplier.designer.vb">
+      <DependentUpon>FrmDrugSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\FrmDrugSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountFinancialState.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountFinancialState.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountFinancialStateSummary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountFinancialStateSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Appointments.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Appointments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BillNoticeCompany.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillNoticeCompany.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\BillNoticePatient.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillNoticePatient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientFinancialStatus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientFinancialStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Consultation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consultation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationStatByAge.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationStatByAge.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationStatByConsultant.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationStatByConsultant.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationStatByDate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationStatByDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ConsultationStatBySex.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultationStatBySex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DebitNoticeCompany.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitNoticeCompany.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DebitNoticePatient.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DebitNoticePatient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugAdjustmentList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugAdjustmentList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugIssue2Patient.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugIssue2Patient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugIssueList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugIssueList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugIssueListSummary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugIssueListSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugPriceList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugPriceList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugReceiptInvoice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugReceiptInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugReceiptList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugReceiptList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Drugs4Reorder.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Drugs4Reorder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugsInExcess.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugsInExcess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DrugValuation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DrugValuation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ExpiredDrugs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpiredDrugs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResultFull.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultFull.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\LabResultList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabResultList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PatientFinancialState.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientFinancialState.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PatientFinancialStateSummary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientFinancialStateSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PatientRecord.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientRecord.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Payment.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Referral.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Referral.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReferralList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferralList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RegistrationList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RegistrationStatByAge.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationStatByAge.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RegistrationStatByDate.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationStatByDate.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RegistrationStatBySex.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationStatBySex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ScanList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScanList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ScanResult.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScanResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XrayList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XrayList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XrayResult.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XrayResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setups\FrmHospServices.Designer.vb">
+      <DependentUpon>FrmHospServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setups\FrmHospServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigDir\Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Receipt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmAdvanceModify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAdvanceModify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmClearPayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmClearPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmDiscount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDiscount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmRefunds.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRefunds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmHelpDesk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmHelpDesk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmRoaster.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRoaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmUnregisteredPatients.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUnregisteredPatients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmLabCulture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLabCulture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmLabStool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLabStool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmLabUrinalysis.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLabUrinalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mailing\frmMailNotification.resx">
+      <DependentUpon>frmMailNotification.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultationAntenatal.resx">
+      <DependentUpon>FrmConsultationAntenatal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmAntenatalBookingInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAntenatalBookingInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultationHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultationHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultationMini.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultationMini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultationPrescription.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultationPrescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultationSummary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultationSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmNursingStation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmNursingStation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmRequestForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRequestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmLPO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmTransfer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Admissions.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Admissions.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AntenatalBooking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AntenatalBooking.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BillsList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillsList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationAntenatal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationAntenatal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationMini.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationMini.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationRegister.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationRegister.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Bills.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bills.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugLPO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugLPO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FinancialAnalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinancialAnalysis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HospitalServices.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HospitalServices.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabRequestList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabRequestList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResult.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultCulture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultCulture.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultRequest.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultStool.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultStool.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultUrinalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultUrinalysis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ServiceRendered.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ServiceRendered.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WardTransfer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WardTransfer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmDutyPost.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDutyPost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmCompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmPatientHistory.resx">
+      <DependentUpon>FrmPatientHistory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmPatientRegister.resx">
+      <DependentUpon>FrmPatientRegister.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\ApexMenu.resx">
+      <DependentUpon>ApexMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmAdhocFinancialState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAdhocFinancialState.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmPayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmAppointments.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAppointments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmCaptureImg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCaptureImg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmBakRes.resx">
+      <DependentUpon>FrmBakRes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmBills.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmChangePwd.resx">
+      <DependentUpon>FrmChangePwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmCoyInfo.resx">
+      <DependentUpon>FrmCoyInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmImageDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmImageDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmRptBuilder.resx">
+      <DependentUpon>FrmRptBuilder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmRptDisplay.resx">
+      <DependentUpon>FrmRptDisplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmStaffRegister.resx">
+      <DependentUpon>FrmStaffRegister.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPatient\FrmAdmission.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAdmission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPatient\FrmDischarge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDischarge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmHospitalWard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmHospitalWard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPatient\FrmWardTransfer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmWardTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mailing\FrmSmsSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSmsSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mailing\FrmInBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mailing\FrmSMS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmDeath.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDeath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmDelivery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDelivery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmICDCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmICDCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmMortuary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMortuary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmMultiSelection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMultiSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmReferral.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReferral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmReferralUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReferralUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InPatient\FrmSurgery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSurgery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmMedExamTypes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMedExamTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmVitalSignType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmVitalSignType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmLabTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLabTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmLabTestResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLabTestResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmList.resx">
+      <DependentUpon>FrmList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mailing\FrmComposeMail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmComposeMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontDesk\FrmPatentList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmPatentList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financials\FrmBulkPayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBulkPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmSplash.resx">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmStart.resx">
+      <DependentUpon>FrmStart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmSvrInfor.resx">
+      <DependentUpon>FrmSvrInfor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmSysPeriod.resx">
+      <DependentUpon>FrmSysPeriod.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\FrmSysUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSysUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmXray.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmXray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmConsultation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicals\FrmMedExam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMedExam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigation\FrmScan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmScan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmBaseUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBaseUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmDrugCategory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDrugCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmIssue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmReceipt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmAssignStore.resx">
+      <DependentUpon>FrmAssignStore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmRequisition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRequisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmStockAdjustment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStockAdjustment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmStores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmStores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmDrugs.resx">
+      <DependentUpon>FrmDrugs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmBatches.resx">
+      <DependentUpon>FrmBatches.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmUnitConverter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUnitConverter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\FrmDrugSupplier.resx">
+      <DependentUpon>FrmDrugSupplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AccountFinancialState.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountFinancialState.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AccountFinancialStateSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountFinancialStateSummary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Appointments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Appointments.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BillNoticeCompany.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillNoticeCompany.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BillNoticePatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillNoticePatient.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClientFinancialStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClientFinancialStatus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Consultation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Consultation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationStatByAge.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationStatByAge.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationStatByConsultant.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationStatByConsultant.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationStatByDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationStatByDate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ConsultationStatBySex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ConsultationStatBySex.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DebitNoticeCompany.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitNoticeCompany.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DebitNoticePatient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DebitNoticePatient.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugAdjustmentList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugAdjustmentList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugIssue2Patient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugIssue2Patient.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugIssueList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugIssueList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugIssueListSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugIssueListSummary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugPriceList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugPriceList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugReceiptInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugReceiptInvoice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugReceiptList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugReceiptList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Drugs4Reorder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Drugs4Reorder.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugsInExcess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugsInExcess.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DrugValuation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DrugValuation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ExpiredDrugs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExpiredDrugs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultFull.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultFull.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LabResultList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LabResultList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PatientFinancialState.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PatientFinancialState.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PatientFinancialStateSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PatientFinancialStateSummary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PatientRecord.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PatientRecord.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Payment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Payment.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Referral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Referral.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReferralList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReferralList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RegistrationList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RegistrationList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RegistrationStatByAge.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RegistrationStatByAge.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RegistrationStatByDate.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RegistrationStatByDate.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RegistrationStatBySex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RegistrationStatBySex.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScanList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ScanList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScanResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ScanResult.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XrayList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XrayList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\XrayResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XrayResult.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setups\FrmHospServices.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmHospServices.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\Hospital2.jpg" />
+    <None Include="Resources\ShowLetter12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top_right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAJEZIV7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lics2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InBox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutBox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="General\app.config" />
+    <None Include="Resources\FIND.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPEN.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApexMedic_TemporaryKey.pfx" />
+    <None Include="app.config" />
+    <None Include="ConfigDir\rptWriter.xls" />
+    <None Include="ConfigDir\WheelChair.gif" />
+    <Content Include="ConfigDir\Config.gif" />
+    <Content Include="ConfigDir\Hosp.gif" />
+    <Content Include="ConfigDir\Readme.htm" />
+    <Content Include="ConfigDir\side-vb.gif" />
+    <Content Include="ConfigDir\SQLDMO.DLL" />
+    <Content Include="ConfigDir\top-vb.gif" />
+    <Content Include="ConfigDir\topjump-vb.gif" />
+    <Content Include="Hosp.ico" />
+    <None Include="LoginPicture.png" />
+    <None Include="loading.gif" />
+    <Content Include="NOTE.txt" />
+    <None Include="Resources\YouveGotMail.bmp" />
+    <None Include="SpashPicture.png" />
+    <None Include="Resources\Untitled.bmp" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="ApexMedic.exe" version="2.0.0.63" publicKeyToken="10678b5d3c58d95c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Hosp.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ApexMedic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ApexMedic.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" version="10.2.3600.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ApexMedic.exe" size="16347136">
+      <assemblyIdentity name="ApexMedic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>k5TZZImtSguYgl0tzmDffZ+XDHc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ATSMS.dll" size="114688">
+      <assemblyIdentity name="ATSMS" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>na96ZvHUxNL+p/CtO7P2ZXWAN38=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="msmdvbanet.dll" size="22232">
+      <assemblyIdentity name="msmdvbanet" version="9.0.242.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>D8EoTWj0N3JTRlQav2ezjuaADz4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ApexMedic.exe.config" size="2055">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c0qKszaLmsUf1gc9Ci99Yl3uR4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\Config.gif" size="307200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8ynRCWu4IvUOUldBnMUtqoDNUQI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\Hosp.gif" size="25243">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7ZZXHev5bz1eX4Pef4ZuvqswuXM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\Readme.htm" size="10515">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KU50u0ydyXKXpxFBVFRTVtEy5dg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\side-vb.gif" size="2497">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sHfkbhQTLLla+GcseRZqCcJcs5E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\SQLDMO.DLL" size="4558848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/j5IUfdLqnpBlaIJ0bpz0IZUxtM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\topjump-vb.gif" size="1288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>c6DTXiNsSjwHp60y7UcAMGoARuY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ConfigDir\top-vb.gif" size="3488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VyZUzmQu/3CQjRfulgYeO8dhjpM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Hosp.ico" size="26694">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>V0pLSU811uYW3DfieokIJVaVpjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="NOTE.txt" size="314">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cBlxKuRi8vJhRNETFnRbxpsdZAM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TODO.txt" size="284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+QUV6FqgenkZWT4bfD838U96YEk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MHCLIENT\Nifemi" issuerKeyHash="e543187fba6c3d89e2cab619cd43de694b840e2e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>z2K9gqPpaRC+8bI+3MalUxKy/Mc=</DigestValue></Reference></SignedInfo><SignatureValue>bsWS/k0cmvJkeJB8LXLgby1cubEqNf/ghsMGrEjX0vaOGw39l771tssyP0C5Fcdqhr1nsIRaPrxtlN9LSE7ttnN9c0CNMr45dzx6LKJVCOySfBKFNebmNoEef7yDwNY04BpQOV9pSzndoU87oUt8XgOBgKd6mqsyffA7lhn+rPU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>m5X5yjOa2B31lVMfbv6scxVB1Eo70adoy1YSYUOFd4UnWpn9oC6fz4ft/zbGtSdnau6TYWqov5bUG1BxnG+TNSTwOKY8i42gTrpiBTnpx+BRP2vPu5Odz5XRRJhqj02b2ZtxCIEXvKgAxl/5jqO/DJMCduLWU8bQxu9vhq0vkIE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c7fcb21253a5c6dc3eb2f1be1069e9a382bd62cf" Description="" Url=""><as:assemblyIdentity name="ApexMedic.exe" version="2.0.0.63" publicKeyToken="10678b5d3c58d95c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MHCLIENT\Nifemi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UvVCjQP3SwwoaEdDC3Hglo6s+Z4=</DigestValue></Reference></SignedInfo><SignatureValue>OGKnn7xnKJ7PKlMos/n31Kv1ZKT/7ostR4u+FXZ/xROG8vlUnDbOmWDvMBu0E0X7duvpz+tAL1ZurXVe/iPVE9BKeRQGG/94w9C36Wah/HRlRiLlAw4G4gxfyXW8sXndZSZWsRYTCKmxhckLgIkD+8emjd5C7ynFXGeJdlrLdKU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>m5X5yjOa2B31lVMfbv6scxVB1Eo70adoy1YSYUOFd4UnWpn9oC6fz4ft/zbGtSdnau6TYWqov5bUG1BxnG+TNSTwOKY8i42gTrpiBTnpx+BRP2vPu5Odz5XRRJhqj02b2ZtxCIEXvKgAxl/5jqO/DJMCduLWU8bQxu9vhq0vkIE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQXpLxjtTWX5VLtYWkiypNsDANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4ATQBIAEMATABJAEUATgBUAFwATgBpAGYAZQBtAGkwHhcNMTEwMjE1MTE0NDEyWhcNMTIwMjE1MTc0NDEyWjApMScwJQYDVQQDHh4ATQBIAEMATABJAEUATgBUAFwATgBpAGYAZQBtAGkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJuV+cozmtgd9ZVTH27+rHMVQdRKO9GnaMtWEmFDhXeFJ1qZ/aAun8+H7f82xrUnZ2ruk2FqqL+W1BtQcZxvkzUk8DimPIuNoE66YgU56cfgUT9rz7uTnc+V0USYao9Nm9mbcQiBF7yoAMZf+Y6jvwyTAnbi1lPG0Mbvb4atL5CBAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEALrJ0A57XhTj9bGM2nla4PwcWb+xhRbuAGJQp8YAFq2Hmb9s9u5MeV8X/qtEhzWyf0Bjb+CerdvDMW1BtaUIK3usWwHs5XQTnGq1YDC56jS04orV6jOyo/KfllEM8e9khzUPA3ST3j+Vx6VUc6xkX+Fa0p8IQ3zmWZ+mz5rtqQ0I=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+
+
+<!--TO READ THIS HELP FILE, RIGHT-CLICK ON THE FILE NAME IN THE
+    SOLUTION EXPLORER WINDOW AND SELECT "VIEW IN BROWSER"-->
+    
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MegaHit - NAAPS</title>
+<style>
+<!--
+BODY         { background: url('top-vb.gif') repeat-x; font-family: Verdana; font-size: 67% }
+.maindiv     { background: url('side-vb.gif') repeat-y; padding-left: 55px; padding-top: 5px; position: relative; height: 50px }
+P            { margin-top: 0; margin-bottom: 6px; line-height:130% }
+H1           { margin-top: 20px; margin-bottom: 12px; font-size:190% }
+H2           { color: #585F56; left: -55px; position: relative; margin-top: 21px; margin-bottom: 9px; font-size:170% }
+H3           { margin-top: 21px; margin-bottom: 9px; font-size: 140%;  font-weight: bold}
+H4           { margin-top: 18px; margin-bottom: 9px; font-size: 140%; font-weight: bold}
+OL           { margin-top: 0; margin-bottom: 9px; line-height:130%}
+UL           { margin-top: 0; margin-bottom: 9px; line-height:130%}
+LI           { margin-top: 0; margin-bottom: 6px }
+BLOCKQUOTE   { margin-left: 20px }
+TABLE        { padding: 4px; BACKGROUND: #f8f7ef; BORDER: #DDDCD6 1px solid; BORDER-COLLAPSE: collapse; margin-bottom: 9px; }
+TR           { vertical-align: top} 
+TD           { padding: 4px; font-family: Verdana; font-size: 67%; line-height: 130%} 
+.contents    { line-height: 150% }
+DIV.CodeBlock   { font-family: "Courier New"; font-size: 100%; margin-bottom: 6px; BACKGROUND: #f8f7ef; BORDER: #eeede6 1px solid; padding: 10px; }
+.CodeInline  { font-family: "Courier New" }
+.ProcedureLabel {margin-top: 12px; font-style: italic; font-weight: bold; color: #0D4CC3 } 
+.FileNameCol { padding: 6px; BACKGROUND: #eeede6; width=220px; font-weight: bold}
+.style2 {
+	color: #009966;
+	font-weight: bold;
+	font-size: 14px;
+}
+.style3 {
+	font-weight: bold;
+	color: #0D4CC3;
+	margin-top: 12px;
+	font-size: 12px;
+}
+#Layer1 {
+	position:absolute;
+	left:72px;
+	top:134px;
+	width:114px;
+	height:23px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:544px;
+	top:426px;
+	width:221px;
+	height:262px;
+	z-index:1;
+}
+.style4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #009900;
+}
+-->
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="20">
+<div class="maindiv">
+
+<a name="top">
+
+<!-- MAIN CONTENT BEGINS -->
+
+</a>
+
+<p>
+    <strong>MegaHits Systems</strong>&nbsp;<a name="top"> </a> - Developing user friendly
+    applications for todays's automation</p>
+<h1>
+    <span style="font-size: 11pt">The Package</span><a name="top">: <span style="color: #990000; font-size: 100%;">
+        ApexMedic - Hospital Management Software</span></a></h1>
+
+
+<h2><A href="#top"><IMG src="topjump-vb.gif" border=0></A><a name="Introduction">Introduction</a></h2>
+
+<p><img src="Hosp.gif" alt="ApexMedic Screen" width="243" height="280" border="2" align="right" style="margin-left: 15px; margin-bottom: 10px; height: 382px; width: 390px;"
+>
+<p align="justify">
+    <strong>ApexMedic</strong> is a ready-to-use windows application, and prides itself
+    with robust and user friendly user interface adopting common and familiar program
+    controls through out the application. <strong>Apexmedic</strong> robustness facilitates
+    for easy customization and an extreme case, where a little extra programming is
+    required. The application is designed for MS Windows OS, and it is generic - i.e
+    its adopts all windows core functionalities. Running in Windows, does not makes
+    the application strange, familiar.</p>
+
+<p align="justify">
+    The application assumes that you have a basic knowledge of computing concepts. You
+    can however learn more about the use of the application in the product documentation
+ by clicking <b>Help</b> on the Main Menu, and selecting <b>Contents</b>, <b>Index</b>, or <b>Search</b>. You can also access Help by 
+ positioning the mouse cursor on the user interface elements such as command buttons or checkboxes for their tooltips</p>
+<p align="justify">&nbsp;</p>
+<p align="justify" class="style4">ApexMedic Features </p>
+<MARQUEE onmouseover=this.stop() 
+                                onmouseout=this.start() trueSpeed scrollAmount=1 
+                                scrollDelay=20 direction=up loop=infinite 
+                                height=200>
+								
+								
+<ol>
+    <li class="style3">Consultation</li>
+	  <li class="style3"><strong> Radiology</strong></li>
+	  <li class="style3"><strong> Laboratory</strong></li>
+	  <li class="style3"><strong> Pharmacy</strong></li>
+	  <li class="style3"><strong> Surgery</strong></li>
+	  <li class="style3"><strong> Maternity</strong></li>
+	  <li class="style3"><strong> Death/Mortuary</strong></li>
+	  <li class="style3"><strong> Referrals</strong></li>
+	  <li class="style3"><strong> Financials</strong></li>
+	  <p>
+	      <span class="style3"><strong> etc </strong>	    </span>
+  </ol>
+  </MARQUEE>
+
+<h2><A href="#top"><IMG src="topjump-vb.gif" border=0></A><a name="GettingStarted">Getting Started</a></h2>
+
+<p>
+    <strong>ApexMedic</strong> is an executable that opens a full-screen window displaying
+    the various modules in the applications. Once loaded, the various modules can be accessed
+    and ran in sessions.</p>
+
+<p class="ProcedureLabel">
+    Some Short cut</p>
+
+<ul>
+	<li>Alt+M - Displays major task menu </li>
+    <li>Alt+A - Displays the administrative menu</li>
+    <li>Alt+S - Displays the general setups</li>
+    <li>Alt+T - Displays Tools menu</li>
+    <li>Press Alt+E to Exit the application. </li>
+</ul>
+
+    <p>
+        Some parameters that could be used throughout the entire system could be set through the General Setups menu option&nbsp;</p>
+    <p>
+        The program contain the following different folder for its use:</p>
+    <p>
+
+<table border="1" bordercolor= #DDDCD6 width="100%" style="border-collapse: collapse">
+	<tr>
+		<td class="FileNameCol">
+            ConfigDir</td>
+		<td>Contains all the image and other configuration files used in the application</td>
+	</tr>
+    <tr>
+        <td class="FileNameCol">
+        </td>
+        <td>
+        </td>
+    </tr>
+  </table>
+    </p>
+
+<h2><A href="#top"><IMG src="topjump-vb.gif" border=0></A><a name="features">Software Feature</a></h2>
+	<p class="MsoNormal">
+        Apart from basic funtionalities, the quality of the software can be extimated in
+        the following on the following parameter: Development Platform, Database Platform
+        and System Architecture, Operating System platform.</p>
+    <p class="MsoNormal">
+        This application uses the following technologies:</p>
+	<ul>
+		<li><strong>DEVELOPMENT PLATFORM</strong> — this product is developmed with Microsoft
+            Visual Studio .NET tools. The key&nbsp; develpment language used is Microsoft Visual
+            Basic .NET. These set of deveopment tools are used to develop efficient, robust,
+            secure and scalable business solutions. This product enjoys all the benefits provided
+            by this tools, no wonder it is unmatched by other competing products.</li>
+        <li><strong>DATABASE PLATFORM</strong> — This suite of programs is designed using ActiveX
+            Data Objects (ADO) technology. This implies that it can be used with virtually any
+            databse platform. Whether your organisation uses <strong>Oracle </strong>database
+            server for its enterprise databse management or <strong>Microsoft SQL Server</strong>
+            or even <strong>ISAM </strong>databases such as Microsoft Access or Borland Dbase,
+            the product would connect and access your database. This ia a great advantage, as
+            you do not have to purchase another database server, if you already have one. However
+            the database adopted is Microsoft SQL Server 2000</li>
+        <li><strong>SYSTEM ARCHITECTURE</strong> — For the purpose of scalability, this product
+            is partitioned into components that can be excuted on different machines. the era
+            of monolitic software is gone. The product is a <strong>Client/Server </strong>application, capable of great performance as the number of current users increases. The client
+            component runs in its on session and it is not affected by other clients running
+            <span lang="EN-US" style="font-size: 8pt; font-family: Verdana; mso-fareast-font-family: 'Times New Roman';
+                mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US;
+                mso-bidi-language: AR-SA">simultaneously.</span></li>
+        <li><strong>OPERATING SYSTEM PLATFORM </strong>— The application is designed for the
+            Microsoft Windows Operating System. This is the most popular Operating System in
+            the world and has great technical support provided by Microsoft. Therefore by using
+            this product, you are still hooked to your favorite operating system </li>
+	</ul>
+	
+	
+<h2><A href="#top"><IMG src="topjump-vb.gif" border=0></A><a name="ContactUs">Contact Us
+</a></h2>
+<h3>
+    <span style="font-size: 60%">
+    Contact:</span> <span style="font-size: 70%; color: #cc0033;">MegaHit Systems</span><p>
+        <span style="font-size: 70%; color: #cc0033;">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Abuja, Nigeria</span></p>
+    <p>
+        <span style="font-size: 60%">&nbsp; &nbsp; &nbsp; &nbsp; Tel: &nbsp;<span style="color: #ff3366"> 
+            <span style="color: #cc0000">09-7812888, +234-803-311-6212</span></span></span></p>
+  </h3>
+ <h3>
+     <span style="font-size: 60%">
+    Web site:</span> <a href="http://www.megahitsystems.com"><span style="font-size: 70%">
+        www.megahitsystem.com</span></a>
+  </h3>
+       
+<h3>
+    <span style="font-size: 60%">
+    <span>
+    Product site</span>:</span><span style="font-size: 70%"> </span><a href="http://www.megahitsystems.com/apexmedic/info.aspx"><span
+        style="font-size: 70%">www.megahitsystems.com/apexmedic/info.aspx</span></a><p>
+ </p>
+    <span style="font-size: 60%">
+     
+         <span>© MegaHit ApexMedic. All rights reserved. Conditions and Terms applied</span>    </span>
+
+
+    <p>&nbsp;</p>
+
+
+
+</div>
+</body>
+</html>

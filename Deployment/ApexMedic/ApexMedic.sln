@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ApexMedic", "ApexMedic.vdproj", "{EF870AF5-1F20-4C77-BDC5-DDB83020401D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF870AF5-1F20-4C77-BDC5-DDB83020401D}.Debug|Default.ActiveCfg = Debug
+		{EF870AF5-1F20-4C77-BDC5-DDB83020401D}.Debug|Default.Build.0 = Debug
+		{EF870AF5-1F20-4C77-BDC5-DDB83020401D}.Release|Default.ActiveCfg = Release
+		{EF870AF5-1F20-4C77-BDC5-DDB83020401D}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

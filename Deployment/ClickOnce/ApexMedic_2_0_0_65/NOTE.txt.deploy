@@ -1,0 +1,4 @@
+1.	if Follow up period is specified, apexMedic insist dat you do not choose followup if not reached, however users can change followup to regular consultation
+2.	you cannot edit consultation details not made by you
+3.	you cant edit patientno once saved
+4.	Patient requiring urgent consultation are listed in RED
